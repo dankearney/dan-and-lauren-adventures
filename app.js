@@ -21,6 +21,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('port', process.env.PORT || 3000);
 app.set('title', 'Dan and Lauren Adventures');
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use('/', routes);
 
