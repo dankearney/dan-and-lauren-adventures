@@ -32,7 +32,7 @@ router.get('/mountains/:mountainName', function(req, res) {
 	  	for (var i=0; i<csvJson.length; i++) {
 	  		if (csvJson[i].Name == req.params.mountainName) {
 	  			console.log(csvJson[i]);
-	  			res.render('mountain', { mountain : csvJson[i] });
+	  			res.render('mountain', { mountain : csvJson[i], imageLibrary : csvJson[i]["Image Library"] });
 	  		}
 	  	}
       })
