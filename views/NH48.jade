@@ -2,3 +2,14 @@ extends layout
 
 block content
   h1 The New Hampshire 48
+  h2 Completed Mountains
+  each mountain in mountains
+    if (mountain["Completed Date"] != '')
+      div 
+        a(href="/mountains/#{mountain.Name}") #{mountain.Name}
+  h2 Unfinished
+  each mountain in mountains
+    if (mountain["Completed Date"] == '')
+      div 
+        a(href="/mountains/#{mountain.Name}") #{mountain.Name}
+      

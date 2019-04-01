@@ -15,6 +15,15 @@ h1 {
   margin-top: 10px;
 }
 
+hr {
+  position: absolute;
+  bottom: 10px;
+  border: 1px solid #eee;
+  width: 95%;
+  left: 0;
+  right: 0;
+}
+
 .main-container {
   width: 50%;
   margin: 0 auto; 

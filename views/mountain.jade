@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1=  mountain.Name
+  h3 Completed on #{mountain["Completed Date"]}, ##{mountain["Order of Completion"]}
+  h3 #{mountain["Summit Elevation"]} foot summit, #{mountain["Hike Length"]} round-trip
+  h3 Difficulty: #{mountain["Difficulty"]} / 10 
+  h3 Summary
+  p #{mountain["Summary"]}
+  

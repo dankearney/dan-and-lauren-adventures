@@ -5,6 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// Google sheets code
+var GoogleSpreadsheet = require('google-spreadsheet');
+var async = require('async');
+
 var routes = require('./routes/routes');
 
 var app = express();
