@@ -1,10 +1,16 @@
 extends layout
 
 block content
-  h1=  mountain.Name
-  h3 Completed on #{mountain["Completed Date"]}, ##{mountain["Order of Completion"]}
-  h3 #{mountain["Summit Elevation"]} foot summit, #{mountain["Hike Length"]} round-trip
-  h3 Difficulty: #{mountain["Difficulty"]} / 10 
+  h1 ##{mountain.Rank}: #{mountain.Name}
+  p 
+    strong #{mountain["Completed Date"]}
+    span , ##{mountain["Order of Completion"]} / 48
+  p 
+    strong #{mountain["Summit Elevation"]} foot 
+    span summit, #{mountain["Hike Length"]} round-trip
+  p 
+    strong #{mountain["Difficulty"]} / 10 
+    span difficulty
   p!= imageLibrary  
   h3 Summary
   p #{mountain["Summary"]}
