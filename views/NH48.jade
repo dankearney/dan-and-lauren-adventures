@@ -10,10 +10,10 @@ block content
       each mountain in mountains
         if (mountain["Completed Date"] != '')
           div 
-            a(href="/mountains/#{mountain.Name}") #{mountain.Name}
+            a(href="/mountains/#{mountain.Name}") #{mountain.Rank}. #{mountain.Name}
     div.col-sm-6
       h2 To Do
       each mountain in mountains
         if (mountain["Completed Date"] == '')
-          div #{mountain.Name}
+          div #{mountain.Rank}. #{mountain.Name}
           
