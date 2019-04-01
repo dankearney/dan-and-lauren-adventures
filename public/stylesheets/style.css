@@ -12,7 +12,8 @@ a {
 }
 
 h1 {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 hr {
@@ -29,6 +30,7 @@ hr {
   margin: 0 auto; 
   min-width: 280px;
   padding: 0px 10px 0px 10px;
+  margin-bottom: 10px;
 }
 
 .splash-header {
@@ -65,4 +67,22 @@ hr {
 
 .nav-item {
   margin-left: 10px;
+}
+
+.long-title {
+  display: block;
+}
+
+.short-title {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .long-title {
+    display: none;
+  }
+
+  .short-title {
+    display: block;
+  }
 }

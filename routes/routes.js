@@ -39,4 +39,9 @@ router.get('/mountains/:mountainName', function(req, res) {
   });
 });
 
+// Washington
+router.get("/Washington", function(req, res) {
+	res.render("washington");
+});
+
 module.exports = router;

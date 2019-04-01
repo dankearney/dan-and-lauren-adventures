@@ -14,11 +14,14 @@ html(lang='en')
     // Navigation
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top
       .container
-        a.navbar-brand(href='/') Dan and Lauren Adventures
+        a.navbar-brand(href='/').long-title Dan and Lauren Adventures
+        a.navbar-brand(href='/').short-title D&L
         #navbar
           ul.navbar-nav.ml-auto
             li.nav-item
               a.nav-link(href='/NH48') NH48
+            li.nav-item 
+              a.nav-link(href='/Washington') Washington
     // Page Content
     .main-container
       block content
