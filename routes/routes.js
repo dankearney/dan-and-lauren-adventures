@@ -16,7 +16,6 @@ router.get('/NH48', function(req, res) {
     csv()
 	  .fromString(body)
 	  .then((csvJson)=>{ 
-	  	console.log(csvJson);
         res.render('NH48', {mountains : csvJson});
       })
   });
