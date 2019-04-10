@@ -59,6 +59,7 @@ hr {
   display: table;
   text-align: center;
   width: 100%;
+  margin-top: -32px;
 }
 
 .navbar-expand-lg .navbar-nav {
